@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test":"npx playwright test",
-    "browserInstall":"npx playwright install"
+    "test": "npx playwright test",
+    "browserInstall": "npx playwright install"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,11 @@
   },
   "homepage": "https://github.com/pisal-shubham/playwright_playlab#readme",
   "devDependencies": {
+    "@faker-js/faker": "^10.5.0",
     "@playwright/test": "^1.63.0",
     "@types/node": "^26.4.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
   }
 }
