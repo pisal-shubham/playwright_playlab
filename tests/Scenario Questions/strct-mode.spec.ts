@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 
 test.describe("strict-mode", () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto("https://playwrightlab.github.io/index.html#");
+    await page.goto('/');
     await expect(page.locator("nav#navbar")).toBeVisible();
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
     await page
